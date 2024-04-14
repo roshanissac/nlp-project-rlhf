@@ -2,3 +2,6 @@ google-cloud-aiplatform
 google-cloud-pipeline-components
 kfp
 gcloud
+tensorboard
+pandas
+rouge
