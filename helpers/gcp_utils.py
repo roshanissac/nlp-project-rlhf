@@ -23,8 +23,7 @@ def calculate_training_steps(pref_dataset_size,prompt_dataset_size,reward_batch_
 
 
 def create_bucket_class_location(bucket_name,region):
-    """
-    Create a new bucket in the US region with the coldline storage
+    """Create a new bucket in the US region with the coldline storage
     class
     """
 
