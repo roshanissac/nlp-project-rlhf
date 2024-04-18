@@ -1,6 +1,6 @@
 # Reinforcement Learning with Human Feedback (RLHF): Bridging the Gap between AI and Human Expertise
 
-This is a simple implementation of the  paper "Learning to summarize from human feedback" for Toronto Metropolitan University , DS8008 Natural Language Processing W2022 Course as part of the its Data Science Master's (MSc) program.
+This is a simple implementation of RLHF based on the  paper "Learning to summarize from human feedback" for Toronto Metropolitan University , DS8008 Natural Language Processing Course as part of the its Data Science Master's (MSc) program.
 
 # Data
 
@@ -21,18 +21,18 @@ These datasets are downloaded and stored under *datasets/* folder.
 
 # Setup
 
-This project is not setupped to run on local machine.It is implemented for Google Cloud Platform(GCP),specify to run in Vertex AI.Follow the below steps to execute this project.
+This project is **not implemented to run on local machine**.It is implemented for Google Cloud Platform(GCP),specify to run in Vertex AI.Follow the below steps to execute this project.
 
 1. Place the GCP **key** file under *keys/* folder(This is required to authenticate with GCP Project where we want to run this experiment)
 2. Open the **nlp_rlhf_project.ipynb** file and follow the Instructions.
-3. Please note running this notebook will incur cost.(Please budget approx 400-600CAD) and will take approx 1 day 4 hours to complete the pipeline run based on the current settings. 
+3. Please note running this notebook will incur cost.(Please budget approx *400-600CAD*) and will take approx 1 day 4 hours to complete the pipeline run based on the current settings. 
 
 
 # References
 
-1. Learning to summarize from human feedback [link](https://arxiv.org/abs/2009.01325)
+1. Learning to summarize from human feedback [link](https://arxiv.org/abs/2009.01325)(*Base Paper*)
 2. Secrets of RLHF in Large Language Models, Secrets of RLHF in Large Language Models Part I: PPO [link]( https://arxiv.org/pdf/2307.04964.pdf)
 3. Secrets of RLHF in Large Language Models, Part II: Reward Modeling [link](https://arxiv.org/pdf/2401.06080.pdf)
-4. Tutorial Reinforment Learning from Human Feedback(Code Implementation) [link](https://learn.deeplearning.ai/reinforcement-learning-from-human-feedback)
+4. Tutorial Reinforment Learning from Human Feedback(*Code Implementation*) [link](https://learn.deeplearning.ai/reinforcement-learning-from-human-feedback)
 5. Google Cloud RLHF[link](https://cloud.google.com/vertex-ai/generative-ai/docs/models/tune-text-models-rlhf)
    
