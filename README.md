@@ -6,26 +6,27 @@ This is a simple implementation of RLHF based on the  paper "Learning to summari
 
 The original raw source of the data used for this experiment comes from Reddit Posts from the below links,
 
-* [Train Dataset](https://openaipublic.blob.core.windows.net/summarize-from-feedback/datasets/tldr_3_filtered/train.jsonl)
-* [Validation Dataset](https://openaipublic.blob.core.windows.net/summarize-from-feedback/datasets/tldr_3_filtered/valid.jsonl)
-* [Test Dataset](https://openaipublic.blob.core.windows.net/summarize-from-feedback/datasets/tldr_3_filtered/test.jsonl)
-* [Samples](https://openaipublic.blob.core.windows.net/summarize-from-feedback/datasets/tldr_3_filtered/samples.txt)
-
-For this experiment due to infrastructure limitations we used the small version of the preprocessed data from Google,
-
-1. **Preference dataset**: gs://vertex-ai/generative-ai/rlhf/text_small/summarize_from_feedback_tfds/comparisons/train/*.jsonl(Stored as *datasets/preference_dataset.jsonl*)
-2. **Prompt dataset**: gs://vertex-ai/generative-ai/rlhf/text_small/reddit_tfds/train/*.jsonl (Stored as *datasets/prompt_dataset.jsonl*)
-3. **Test/Validation dataset**: gs://vertex-ai/generative-ai/rlhf/text_small/reddit_tfds/val/*.jsonl (Stored as *datasets/validate_dataset.jsonl*)
+* [Train Dataset]([https://openaipublic.blob.core.windows.net/summarize-from-feedback/datasets/tldr_3_filtered/train.jsonl](https://www.kaggle.com/competitions/rossmann-store-sales/data))
 
 These datasets are downloaded and stored under *datasets/* folder.
 
 # Setup
 
-This project is **not implemented to run on local machine**.It is implemented for Google Cloud Platform(GCP),specify to run in Vertex AI.Follow the below steps to execute this project.
+This project requires **high memory**.The results of this project is obtained by running in Google Colab environment with High Memory.The PyTorch Forecasting library triggered some bugs when ran in GPU ,Hence the models was trained on CPU only.
 
-1. Place the GCP **key** file under *keys/* folder(This is required to authenticate with GCP Project where we want to run this experiment)
-2. Open the **nlp_rlhf_project.ipynb** file and follow the Instructions.
-3. Please note running this notebook will incur cost.(Please budget approx *400-600CAD*) and will take approx 1 day 4 hours to complete the pipeline run based on the current settings. 
+Below are the steps to run the experiments,
+
+1. Clone this repository to your local machine.
+2. Create a conda or virtual environment by executing below command.
+   
+4. Install the packages/requirements by executing 
+5. Go to the root folder and execute the below commands
+   ```
+   
+   ```
+   
+6. Open the **nlp_rlhf_project.ipynb** file and follow the Instructions.
+7. Please note running this notebook will incur cost.(Please budget approx *400-600CAD*) and will take approx 1 day 4 hours to complete the pipeline run based on the current settings. 
 
 
 # References
