@@ -18,12 +18,18 @@ Below are the steps to run the experiments,
 
 1. Clone this repository to your local machine.
 2. Create a conda or virtual environment by executing below command on anaconda terminal(In Windows) or in Terminal(Mac).Make sure you have installed anaconda.
-   ```conda create -n dl-project python=3.10```
+   ```
+   conda create -n dl-project python=3.10
+   ```
 3. Activate the created environment by executing below command,
-   ```conda activate dl-project```
-5. Go to the root folder of the project and Install the packages/requirements by executing the below command.
-   ```pip  install -r requirements.txt```
-7. To run the experiments please follow below commands,
+   ```
+   conda activate dl-project
+   ```
+4. Go to the root folder of the project and Install the packages/requirements by executing the below command.
+   ```
+   pip  install -r requirements.txt
+   ```
+5. To run the experiments please follow below commands,
    To run experiment with TFT model,execute the below commands,
    ```
    python main.py --model "tft" --no_of_epochs 50  
