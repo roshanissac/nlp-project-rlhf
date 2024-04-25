@@ -6,7 +6,7 @@ This is a simple implementation of RLHF based on the  paper "Learning to summari
 
 The original raw source of the data used for this experiment comes from Reddit Posts from the below links,
 
-* [Train Dataset]([https://openaipublic.blob.core.windows.net/summarize-from-feedback/datasets/tldr_3_filtered/train.jsonl](https://www.kaggle.com/competitions/rossmann-store-sales/data))
+* [Train Dataset]([[https://openaipublic.blob.core.windows.net/summarize-from-feedback/datasets/tldr_3_filtered/train.jsonl](https://www.kaggle.com/competitions/rossmann-store-sales/data))]
 
 These datasets are downloaded and stored under *datasets/* folder.
 
@@ -17,16 +17,32 @@ This project requires **high memory**.The results of this project is obtained by
 Below are the steps to run the experiments,
 
 1. Clone this repository to your local machine.
-2. Create a conda or virtual environment by executing below command.
-   
-4. Install the packages/requirements by executing 
-5. Go to the root folder and execute the below commands
+2. Create a conda or virtual environment by executing below command on anaconda terminal(In Windows) or in Terminal(Mac).Make sure you have installed anaconda.
+   ```conda create -n dl-project python=3.10```
+3. Activate the created environment by executing below command,
+   ```conda activate dl-project```
+5. Go to the root folder of the project and Install the packages/requirements by executing the below command.
+   ```pip  install -r requirements.txt```
+7. To run the experiments please follow below commands,
+   To run experiment with TFT model,execute the below commands,
+   ```
+   python main.py --model "tft" --no_of_epochs 50  
+   ```
+   To run experiment with N-BEATS model,execute the below command,
+   ```
+   python main.py --model "nbeats" --no_of_epochs 50  
+   ```
+   To run experiment with N-HITS model,execute the below command,
+   ```
+   python main.py --model "nhits" --no_of_epochs 50  
+   ```
+   To run all experiments together you can add *--all* flag to the command as below,In this case for --model parameter you can pass empty string.
+   ```
+   python main.py --model " " --no_of_epochs 50  --all
    ```
    
-   ```
-   
-6. Open the **nlp_rlhf_project.ipynb** file and follow the Instructions.
-7. Please note running this notebook will incur cost.(Please budget approx *400-600CAD*) and will take approx 1 day 4 hours to complete the pipeline run based on the current settings. 
+9. Open the **nlp_rlhf_project.ipynb** file and follow the Instructions.
+10. Please note running this notebook will incur cost.(Please budget approx *400-600CAD*) and will take approx 1 day 4 hours to complete the pipeline run based on the current settings. 
 
 
 # References
