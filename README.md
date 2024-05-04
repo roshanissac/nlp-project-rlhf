@@ -4,7 +4,7 @@ This is a simple implementation of RLHF based on the  paper "Learning to summari
 
 # Data
 
-The original raw source of the data used for this experiment comes from Reddit Posts from the below links,
+The original raw source of the data used for this experiment comes from below link
 
 * [Train Dataset](https://openaipublic.blob.core.windows.net/summarize-from-feedback/datasets/tldr_3_filtered/train.jsonl)
 * [Validation Dataset](https://openaipublic.blob.core.windows.net/summarize-from-feedback/datasets/tldr_3_filtered/valid.jsonl)
@@ -37,4 +37,6 @@ This project is **not implemented to run on local machine**.It is implemented fo
 5. Google Cloud RLHF[link](https://cloud.google.com/vertex-ai/generative-ai/docs/models/tune-text-models-rlhf)
 6. Wangchunshu Zhou, Ke Xu, "Learning to compare for better training and evaluation of open domain natural language generation models", 2020, [link](https://arxiv.org/pdf/2002.05058.pdf)
 7. Daniel M. Ziegler, Nisan Stiennon, Jeffrey Wu Tom B. Brown Alec Radford Dario Amodei Paul Christiano Geoffrey Irving, "Fine-tuning language models from human preferences", 2020, [link](https://arxiv.org/pdf/1909.08593.pdf)
+   
+
    
